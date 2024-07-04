@@ -1,0 +1,139 @@
+.container {
+  /* position: relative; */
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  width: 1522px;
+  height: 609px;
+  left:10px;
+  background: url('C:\Users\sunny\Downloads\new-main\new-main\src\Profile1\Rectangle 1.jpg') no-repeat center center/cover;
+  /* z-index: -1; */
+
+
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  font-family: Poppins;
+  font-size: 55px;
+ font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+
+}
+
+.content h2 {
+  font-family: Poppins;
+  font-size: 50px;
+ font-weight: 400;
+  line-height: 66px;
+  text-align: center;
+/* margin-right: 400px; */
+
+}
+
+.search-bar {
+  
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 3em;
+  
+
+}
+.search-bar1{
+  width: 600px;
+  height: 56px;
+  top: 379px;
+  left: 296px;
+  padding: 10px 18px 6px 19px;
+ 
+   border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+   
+
+}
+.search-bar2{
+  width: 400px;
+height: 56px;
+
+
+border-radius: 5px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+
+
+}
+
+.search-bar input {
+  padding: 0.5em;
+  font-size: 1em;
+  width: 250px;
+}
+
+.search-bar button {
+ 
+  font-size: 1em;
+  background-color: #28a745;
+  color: white;
+ 
+  cursor: pointer;
+  width: 117.94px;
+  height: 54px;
+  
+  padding: 0px 32.8px 0px 33px;
+ 
+  border-radius: 5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  
+  
+}
+
+.search-bar button:hover {
+  background-color: #218838;
+}
+
+.buyer-link {
+  margin-top: 3em;
+  
+}
+.buyer-link .buyer1{
+  font-family: Poppins;
+ font-size: 18px;
+ font-weight: 700;
+  line-height: 27px;
+   text-align: center;
+
+}
+.buyer-link span{
+  text-decoration: underline;
+}
+
+.buyer-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.buyer-link a:hover {
+  text-decoration: underline;
+}
+.search-icon {
+  position: absolute;
+  left: 3px;
+  color: #cbef17;
+  margin-top: 19px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}

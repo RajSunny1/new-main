@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  width: 181px;
+  height: 43px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end; /* Align nav items to the right by default */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Align items in the nav list vertically */
+}
+
+.nav-list li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li a:hover {
+  color: #00732F;
+}
+
+.login-button {
+  
+  
+  cursor: pointer;
+  border: 1px solid #00732F;
+
+  color: #00732F;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 193.31px;
+  height: 50px;
+ 
+  padding: 17px 20.8px 17px 21px;
+ 
+  border-radius: 5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  
+  
+}
+
+/* .login-button:hover {
+  background-color: white;
+  color: #00732F;
+} */
+
+/* Responsive menu styles */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.nav.open .nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav.open .nav-list li {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    justify-content: center; /* Center align nav items on mobile */
+  }
+
+  .nav.open .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .login-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

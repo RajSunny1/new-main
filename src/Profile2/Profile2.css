@@ -1,0 +1,127 @@
+/* Base styles */
+
+.signup-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  background-color: white;
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+.left-section h1 {
+  font-family: Poppins;
+  font-size: 2.46em; /* Adjusted for responsive typography */
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.highlight {
+  color: #271555; /* Example color, adjust as necessary */
+}
+
+p {
+  
+  font-family: Poppins;
+  font-size: 17.16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  
+}
+
+.signup-button {
+  font-size: 1em; /* Adjusted for responsive typography */
+  color: white;
+  background-color: #28a745; /* Example color, adjust as necessary */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Adjusted to full width on small screens */
+  max-width: 317px; /* Limit width on larger screens */
+  height: 54px;
+  padding: 0 1em; /* Adjusted padding for responsiveness */
+  border-radius: 5px;
+  border: none;
+  margin-top: 1em;
+}
+
+.signup-button:hover {
+  background-color: #218838; /* Example color, adjust as necessary */
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;width: 541px;
+  height: 244px;
+  top: 723px;
+ left: 872px;
+  gap: 8px;
+  border-radius: 5px 0px 0px 0px;
+ border: 1px 0px 0px 0px;
+  
+  
+
+}
+
+.location-button {
+  text-align: center;
+  border: 1px solid #ff9800; /* Example color, adjust as necessary */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%; /* Adjusted to full width on small screens */
+  max-width: 260px; /* Limit width on larger screens */
+  height: 65px;
+  padding: 1em; /* Adjusted padding for responsiveness */
+  border-radius: 5px;
+}
+
+.location-button:hover {
+  background-color: #ff9800; /* Example color, adjust as necessary */
+  color: white;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (min-width: 768px) {
+  .signup-container {
+    flex-direction: row;
+  }
+
+  .left-section {
+    max-width: 50%;
+    padding-right: 2em; /* Adjusted spacing between sections */
+  }
+
+  .right-section {
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  .signup-button {
+    width: 317px; /* Reset width for larger screens */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 1em; /* Adjusted padding for smaller screens */
+  }
+
+  .left-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .signup-button,
+  .location-button {
+    width: 100%; /* Full width for all buttons on smaller screens */
+    max-width: none;
+  }
+}

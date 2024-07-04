@@ -1,0 +1,67 @@
+.main-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E8FBFF; /* Adjust color to match your design */
+  margin: 30px auto; /* Center the div horizontally with auto margins */
+  padding: 20px;
+  width: 100%; /* Adjusted to be responsive */
+  max-width: 1512px; /* Maximum width */
+  height: auto; /* Adjusted to be responsive */
+  min-height: 254px; /* Minimum height */
+  border: 1px solid #e0f7fa; /* Optional: Add border with adjusted color */
+
+  /* Additional styles */
+}
+
+.text-div h1 {
+  font-family: Poppins;
+  font-size: 37.34px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+}
+
+.underline1 {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline1::after {
+  content: '';
+  display: block;
+  width: 100%; /* Adjust width as needed */
+  border-bottom: 3px solid #EB7150; /* Adjust border color and width */
+  position: absolute;
+  left: 0;
+  /* bottom: -5px;  */
+  /* Adjust position as needed */
+}
+
+.button-div button {
+  background-color: #f96d5b; /* Adjust button color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+  width: 216px;
+  height: 54px;
+  padding: 0px 52px; /* Adjust padding for button */
+  border-radius: 5px; /* Adjust border radius */
+}
+
+@media screen and (max-width: 768px) {
+  .main-div {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .text-div h1 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .button-div button {
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 20px; /* Adjust spacing */
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}

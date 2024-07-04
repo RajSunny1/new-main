@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+   
+/* Apply these styles globally to ensure no element exceeds 100% width */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Example of applying to specific elements */
+  
+  .main-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Additional styles as needed */
+  
+  
